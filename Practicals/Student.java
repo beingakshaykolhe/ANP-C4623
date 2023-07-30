@@ -1,15 +1,59 @@
 package corejava;
-
-public class Student {
-
-	public static void main(String[] args) 
+//create class student which extends to class person
+public class Student extends Person
+{
+	
+	//field
+	String studentId;
+	String major;
+	
+	//create constructor
+	public Student(String name, int age, String studentId, String major)
 	{
-		// Creating objects
-		StudentData s= new StudentData();
-		s.setId(1);
-		s.setName("Akshay");
-		s.setAge(24);
-		System.out.println("Student ID:"+s.getId()+"\nStudent Name:"+s.getName()+"\nStudent Age:"+s.getAge());
+		super(name, age);
+		this.studentId = studentId;
+		this.major = major;
 	}
+	
+	//generate getter and setter methods
+	public String getStudentId()
+	{
+		return studentId;
+	}
+	public void setStudentId(String studentId)
+	{
+		this.studentId = studentId;
+	}
+	public String getMajor()
+	{
+		return major;
+	}
+	public void setMajor(String major)
+	{
+		this.major = major;
+	}
+	
 
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

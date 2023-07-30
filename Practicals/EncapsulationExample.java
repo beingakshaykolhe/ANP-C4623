@@ -1,23 +1,33 @@
-//Encapsulation Demonstration
+
 package corejava;
-class EncapsulationExample 
+
+class EncapsulationExample
 {
+ 
 	private int id;
 	private String name;
+	
 	public int getId() {
 		return id;
 	}
-	public void setId(int id) 
-	{
+	public void setId(int id) {
 		this.id = id;
 	}
-	public String getName() 
-	{
+	public String getName() {
 		return name;
 	}
-	public void setName(String name) 
-	{
+	public void setName(String name) {
 		this.name = name;
 	}
 	
+
+}
+class a
+{
+	public static void main(String[]args)
+	{
+		EncapsulationExample E=new EncapsulationExample();
+		E.setId(123);
+		System.out.println(E.getId());
+	}
 }
